@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <head>
+    <link rel="icon" type="image/png" href="images/stethoscope.PNG"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>ThinkMED</title>
+  </head>
+  
+  <body>
+    <div class="w3-container w3-top navbar w3-white">    
+      <div class="w3-center">
+        <a href="#home" class="w3-bar-item w3-button w3-wide w3-display-left"><img src="/images/stethoscope.PNG" alt="stethoscope" width="21px" height="30px" /> ThinkMED</a>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button"><i class="fa fa-map"></i> ABOUT <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card">
+            <a href="#about" class="w3-bar-item w3-button">MISSION STATEMENT</a>
+            <a href="updates.html" target="_blank" class="w3-bar-item w3-button">COVID-19 UPDATES</a>
+            <a href="#team" class="w3-bar-item w3-button">LEADERSHIP + TEAM OF SCIENTISTS</a>
+            <a href="#contact" class="w3-bar-item w3-button">CONNECT</a>
+          </div>
+        </div>
+        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a href="https://fiat-lux.royffeng.repl.co/#/Calendar" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i> SCHEDULE</a>
+
+        <div class="w3-dropdown-hover">
+          <button class="w3-button"><i class="fa fa-flask"></i> SIMULATIONS <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card">
+            <a href="https://docs.google.com/presentation/d/1Y4ZIw2znJQjtx7CMz5C5DlXdNqT2-5B1IpwA92YEvvs/edit#slide=id.gcccb1898ec_0_154" 
+              target="_blank" class="w3-bar-item w3-button"><i class="fa fa-snowflake-o"></i> Week 1</a>
+            <a href="https://docs.google.com/presentation/d/1F4__jDz907ZrutjNKDEvMKEFWQU840WTS-Y1UxpFdaI/edit#slide=id.gda9cb14cda_0_156" 
+              target="_blank" class="w3-bar-item w3-button"><i class="fa fa-question-circle"></i> Week 2</a>
+            <a href="https://docs.google.com/presentation/d/1ClNo9CZ7T7PxG455yvsXZfLXDWT8dMnjEUjIGT8B9y4/edit#slide=id.gd7f2d276f2_2_75" 
+              target="_blank" class="w3-bar-item w3-button"><i class="fa fa-fire"></i> Week 3</a>
+            <a href="https://docs.google.com/presentation/d/1oUn2GRPYt8TqO5BegWoNXhpMumYr294INGuIxyaoOXo/edit#slide=id.gdcd93fdfa2_6_0" 
+              target="_blank" class="w3-bar-item w3-button"><i class="fa fa-circle-o-notch fa-spin"></i> Week 4</a>
+          </div>
+        </div>
+
+        <div class="w3-dropdown-hover">
+          <button class="w3-button"><i class="fa fa-gift"></i> GIVE <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card">
+            <a ><img src="/images/Venmo.JPG" alt="Venmo"height="300" width="300"></a>
+          </div>
+        </div>
+
+        <a href="news.html" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-bullhorn"></i> NEWS</a>
+        <div id="google_translate_element" class="w3-display-right" style="padding: 18px"></div>
+        <script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>      
+      </div>
+    </div>
+  </body>
+
+
+
+      <!-- Sidebar on small screens when clicking the menu icon -->
+      <nav
+        class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display: none"
+        id="mySidebar"
+      >
+        <a
+          href="javascript:void(0)"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-large w3-padding-16"
+          >Close ×</a
+        >
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"
+          >ABOUT</a
+        >
+        <a href="https://fiat-lux.royffeng.repl.co/#/" onclick="w3_close()" class="w3-bar-item w3-button">
+          CLICK HERE FOR KIDS MODE</a>
+
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button"
+          >TEAM</a
+        >
+
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button"
+          >CONTACT</a
+        >
+      </nav>
+
+      <!-- Header with full-height image -->
+      <header class="bgimg-1 w3-display-container" id="home">
+        
+        <div class="w3-display-topright w3-text-white" style="padding: 65px">
+          <a href="https://fiat-lux.royffeng.repl.co/#/" target="_blank" onclick="w3_close()" class="w3-button w3-yellow w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off w3-right">
+              <i style="border:darkgoldenrod" class="fa fa-star fa-spin"></i> STUDENTS CLICK HERE </a>
+        </div>
+        
+        <div class="w3-display-left w3-text-white" style="padding: 48px">
+          <h1 class="w3-jumbo w3-hide-small typewriter">Inspiring the future of <span style="color: coral"><b>STEM</b></span>, one project at a time.</h1>
+          <h2 class="w3-xlarge"
+            >Start learning with <span style="color:greenyellow">real scientists</span> and <span style="color: greenyellow">professors</h2>
+          <p>
+            <a
+              href="#about"
+              class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"
+              >Learn more</a>
+          </p>
+        </div>
+        <div
+          class="w3-display-bottomleft w3-text-grey w3-large"
+          style="padding: 24px 48px"
+        >
+          <a href="https://www.instagram.com/thinkmed_org/?hl=en" target="_blank" class="fa fa-instagram w3-hover-opacity"></a>
+          <a href="https://twitter.com/ThinkMED3" target="_blank" class="fa fa-twitter w3-hover-opacity"></a>
+          <a href="https://www.facebook.com/profile.php?id=100067192824015" target="_blank" class="fa fa-facebook w3-hover-opacity"></a>
+        </div>
+      </header>
+
+      <!-- About Section -->
+      <div class="w3-container" style="padding: 128px 16px" id="about">
+        <h3 class="w3-center">ABOUT US</h3>
+        <div class="w3-row-padding w3-center" style="margin-top: 64px">
+          <div class="w3-quarter">
+            <i class="fa fa-map-marker w3-margin-bottom w3-jumbo w3-center"></i>
+            <p class="w3-large">Who We Are</p>
+            <p>
+              ThinkMED is a nonprofit organization offering a four-week curriculum
+              specifically designed to develop critical thinking and encourage
+              evidence-based decision making.
+            </p>
+          </div>
+          <div class="w3-quarter">
+            <i class="fa fa-compass fa-spin w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">We've Got You</p>
+            <p>
+              Each week’s content material revolves around the use of a ThinkMED
+              Science Kit containing a wet lab experiment designed to supplement
+              the content curriculum. Each experiment is formulated to be
+              inclusive of all California Next Generation Science Standards K
+              through 5.
+            </p>
+          </div>
+          <div class="w3-quarter">
+            <i class="fa fa-map-o w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">You Are Here</p>
+            <p>
+              At the end of each week, students get the opportunity to speak
+              with university professors and scientists from a multitude of
+              subject areas including chemistry, anatomy, computer science,
+              physiology, psychology, and bioengineering.
+            </p>
+          </div>
+          <div class="w3-quarter">
+            <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Our Mission</p>
+            <p>
+              Ultimately, the goal of ThinkMED is to inspire the future of STEM,
+              one project at a time.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Promo Section - "We know design" -->
+      <div class="w3-container w3-light-grey" style="padding: 80px 40px">
+        <div id="stage" class="fifty_column">
+          <a><img src="/images/whiteboard_chidler.JPG" alt="child" height="600" width="500"></a>
+          <a><img src="/images/delivery.jpg" alt="delivery" height="600" width="500"></a>
+          <a><img src="/images/victoria_felix.jpg" alt="victoria" height="600" width="500"></a>
+          <a><img src="/images/purple_liquid.png" alt="purple" height="600" width="500"></a>
+          <a><img src="/images/purple_ooblek.JPG" alt="purple" height="600" width="500"></a>
+          <a><img src="/images/teaching.jpg" alt="teaching" height="600" width="500"></a>
+          <a><img src="/images/jojo_siwa.jpg" alt="jojo" height="600" width="500"></a>
+          <a><img src="/images/orange_writing.jpg" alt="bubbles" height="600" width="500"></a>
+        </div>
+        <div class="w3-row-padding m3-center">
+          <div class="fifty_column_r">
+            <h2>You Think with us, we Think with you.</h2>
+            <p>
+              Join the STEAM Team as we explore the wonders of the scientific method. 
+              Contained in each ThinkMED kit are four (4) experiments that will unleash 
+              your inner scientist. From non-Newtonian fluid to lava lamps, our young 
+              Thinkers will be performing experiments in a safe environment designed to 
+              uncover their scientific side!
+            </p>
+            <p>
+              <a href="#sponsors" class="w3-button w3-black"><i class="fa fa-th"> </i> Sponsors and Partners</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Team Section -->
+      <div class="w3-container" style="padding: 54px 16px" id="team">
+        <div class="about-section"></div>
+        <img
+          src="/images/STEAM Team.png"
+          alt="Steam Team Logo"
+          class="center"
+        />
+      </br>
+        <p class="w3-center w3-large">
+          <i class="fa fa-gear fa-spin"></i> 
+          The ones who run this organization
+          <i class="fa fa-gear fa-spin"></i>
+        </p>
+      </br>
+        <h2 style="text-align:center">Our Team</h2>
+      </br>
+        <div class="row">
+          <div class="column4mem">
+            <div class="w3-card">
+              <img src="/images/steven.jpg" alt="Steven" style="width:100%">
+              <div class="w3-container">
+                <h3> Steven Trinh</h3>
+                <p class="w3-opacity">Founder / CEO</p>
+                <p><b>Fun Fact: </b> I can sign the alphabet backwards in ASL!</br>
+                  Student at Chapman University working towards a degree in Clinical Applied Human Physiology.</br> </p>
+              </div>
+            </div>
+          </div>
+          <div class="column4mem">
+            <div class="w3-card">
+              <img src="/images/kim 4.0.jpeg" alt="Kimberly" style="width:100%">
+              <div class="w3-container">
+                <h3>Kimberly Dao</h3>
+                <p class="w3-opacity">Art Director</p>
+                <p><b>Fun Fact: </b> I am an avid lover of cute animals!</br>
+                  Undergraduate student at University of California, Riverside,
+                  pursuing a degree in Bioengineering. </br>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="column4mem">
+            <div class="w3-card">
+              <img src="/images/Roy 2.0.JPG" alt="Roy" style="width:100%">
+              <div class="w3-container">
+                <h3>Roy Feng</h3>
+                <p class="w3-opacity">Web Designer</p>
+                <p><b>Fun Fact: </b>I streamed 340k minutes on Spotify in 2020 alone! </br>
+                  Undergraduate student at UCR, pursuing a degree in Computer Science.</p>
+              </div>
+            </div>
+          </div>
+          <div class="column4mem">
+            <div class="w3-card">
+              <img src="/images/Jasmine.jpg" alt="Jasmine" style="width:100%">
+              <div class="w3-container">
+                <h3>Jasmine Lau</h3>
+                <p class="w3-opacity">Web Designer</p>
+                <p><b>Fun Fact: </b> I created this website! </br>
+                  Researcher at UCR, and working towards a BS in Computer Science with Business Applications.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="text-align:center"><i class="fa fa-group"></i> OUR TEAM OF SCIENTISTS </h2>
+    <div class="w3-container" style="padding: 54px 16px" id="team">
+    <div class="about-section"></div>
+      <div class="column5mem">
+        <div class="w3-card">
+          <img src="/images/Lauren Dudley.JPG" alt="Lauren" style="width:100%">
+          <div class="w3-container">
+            <h3>Lauren Dudley B.S., M.S. Ph.D. (2023)</h3>
+            <p class="w3-opacity">Organic Chemistry</p>
+            <p><b>Fun Fact: </b> I love to paint and be artistic in chemistry! </br></p>
+          </div>
+        </div>
+      </div>
+      <div class="column5mem">
+        <div class="w3-card">
+          <img src="/images/John Hunter.jpg" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>John Hunter B.A., M.S., Ph.D.</h3>
+            <p class="w3-opacity">Psychology</p>
+            <p><b>Fun Fact: </b> I can speak a very rare language called Chuukese!</br></p>
+          </div>
+        </div>
+      </div>
+      <div class="column5mem">
+        <div class="w3-card">
+          <img src="/images/frank frisch.jpg" alt="Frank" style="width:100%">
+          <div class="w3-container">
+            <h3>Dr. Frank Frisch B.A., M.A., Ph.D.</h3>
+            <p class="w3-opacity">Physiology</p>
+            <p><b>Fun Fact: </b> </br></p>
+          </div>
+        </div>
+      </div>
+      <div class="column5mem">
+        <div class="w3-card">
+          <img src="/images/david richards.jpeg" alt="David" style="width:100%">
+          <div class="w3-container">
+            <h3>Dr. David Richards B.A., B.S., DPT</h3>
+            <p class="w3-opacity">Anatomy & Physical Therapy</p>
+            <p><b>Fun Fact: </b> </br></p>
+          </div>
+        </div>
+      </div>
+      <div class="column5mem">
+        <div class="w3-card">
+          <img src="/images/peter chang.jpg" alt="Peter" style="width:100%">
+          <div class="w3-container">
+            <h3>Dr. Peter Chang B.S., M.S., Ph.D.</h3>
+            <p class="w3-opacity">Pharmacy & Chemistry</p>
+            <p><b>Fun Fact: </b> </br></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Promo Section "Statistics" -->
+    <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+      <div class="w3-third">
+        <span class="w3-xxlarge">5+</span>
+        <br />Partners
+      </div>
+      <div class="w3-third">
+        <span class="w3-xxlarge">20,000+</span>
+        <br />Thinkers
+      </div>
+      <div class="w3-third">
+        <span class="w3-xxlarge">10+</span>
+        <br />Communities Served
+      </div>
+
+    </div>
+
+    <!-- Work Section-->
+    <div class="w3-container" style="padding: 50px 16px" id="sponsors">
+      <h1 class="w3-center">SPONSORS AND PARTNERS</h1>
+      <body>        
+        <div class="w3-content w3-display-container">
+        
+        <div class="w3-display-container mySlides w3-center">
+          <img src="images/chapman.jpg" style="width:40%">
+          <div class="w3-center w3-large w3-container w3-padding-16 w3-light-gray">
+            <a href="https://www.chapman.edu/" target="_blank" class="w3-text-red">Chapman University</a>
+          </div>
+        </div>
+        
+        <div class="w3-display-container mySlides w3-center">
+          <img src="/images/rcoc.jpg" style="width:40%">
+          <div class="w3-center w3-large w3-container w3-padding-16 w3-light-gray">
+            <a href="https://www.rcocdd.com/" target="_blank" class="w3-text-light-blue">Regional Center of Orange County</a>
+          </div>
+        </div>
+        
+        <div class="w3-display-container mySlides w3-center">
+          <img src="/images/tusd.jpg" style="width:40%">
+          <div class="w3-center w3-large w3-container w3-padding-16 w3-light-gray">
+            <a href="https://www.tustin.k12.ca.us/" target="_blank" class="w3-text-indigo">Tustin Unified School District</a>
+          </div>
+        </div>
+        
+        <div class="w3-display-container mySlides w3-center">
+          <img src="/images/ousd.jpg" style="width:40%">
+          <div class="w3-center w3-large w3-container w3-padding-16 w3-light-gray">
+            <a href="https://www.orangeusd.org/" target="_blank" class="w3-text-orange">Orange Unified School District</a>
+          </div>
+        </div>
+
+        <div class="w3-display-container mySlides w3-center">
+          <img src="/images/think together.jpg" style="width:40%">
+          <div class="w3-center w3-large w3-container w3-padding-16 w3-light-gray">
+            <a href="https://thinktogether.org/" target="_blank" class="w3-text-blue-grey">Think Together</a>
+          </div>
+        </div>
+        
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+        
+        </body>
+        
+    </div>
+    <!-- Modal for full size images on click-->
+    <div
+      id="modal01"
+      class="w3-modal w3-black"
+      onclick="this.style.display='none'"
+    >
+      <span
+        class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
+        title="Close Modal Image"
+        >×</span
+      >
+      <div
+        class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+      >
+        <img id="img01" class="w3-image" />
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-light-grey" style="padding: 20px 16px" id="contact">
+      <h3 class="w3-center">CONTACT US</h3>
+      <p class="w3-center w3-large">Let's get in touch. Send us a message:</p>
+      <div style="margin-top: 48px" class="fifty_column">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>
+          Based: <a href="https://goo.gl/maps/2nQ9CXny6LuJbcUK6" class="w3-text-orange"> Orange County, CA, US</a></p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +1 (949) 506-8495 </p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>
+          Email: <a href="mailto: thinkmedorg@gmail.com" class="w3-text-light-green"> thinkmedorg@gmail.com</a>
+        </p>
+      </br>
+      </div>
+      
+      <div class="w3-center fifty_column">
+        <form action="https://formspree.io/f/mayaeyel" method="POST">
+        </br>
+          <label>
+            Your Email:
+            <input type="email" name="_replyto">
+          </label>
+        </br>
+          <label>
+            The Message:   
+            <textarea name="message"></textarea>
+          </label>
+          <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+        </br>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+        <script>
+          /* paste this in verbatim */
+          window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments);};
+        
+          /* customize formbutton here*/     
+          formbutton("create", {
+            styles: {
+              button: {
+                fontFamily:'"Roboto Slab", serif',
+                background: "#a5dff2"
+              },
+            title: {
+              fontFamily:'"Roboto Slab", serif',
+              background: "#a5dff2",
+              letterSpacing: "0.05em",
+              textTransform: "uppercase"
+            }
+            },
+            action: "https://formspree.io/f/mayaeyel",
+            initiallyVisible: false
+          });
+        </script>
+        <!-- your other form fields go here -->
+
+    </div>
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+      <a href="#home" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+      <div class="w3-xlarge w3-section">
+        <a href="https://www.instagram.com/thinkmed_org/?hl=en"  target="_blank" class="fa fa-instagram w3-hover-opacity"></a>
+        <a href="https://twitter.com/ThinkMED3" target="_blank" class="fa fa-twitter w3-hover-opacity"></a>
+        <a href="https://www.facebook.com/profile.php?id=100067192824015" target="_blank" class="fa fa-facebook w3-hover-opacity"></a>
+      </div>
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
