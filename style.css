@@ -18,7 +18,7 @@ html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("/images/fuzzy sweater.JPG");
+  background-image: url("images/fuzzy sweater.JPG");
   min-height: 100%;
 }
 
@@ -237,7 +237,8 @@ img {
   float: left;
   width: 50%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  max-width: 100%;
+  max-height: fit-content;
 }
 
 .fifty_column_r {
@@ -245,4 +246,8 @@ img {
   width: 50%;
   padding: 10px;
   height: 300px;
+}
+
+.centered_stage {
+  padding-right: 515px;
 }
